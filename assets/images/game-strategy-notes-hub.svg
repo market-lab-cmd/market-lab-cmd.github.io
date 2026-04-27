@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Game Strategy Notes Hub cover image</title>
+  <desc id="desc">A calm senior-player review desk with board and card strategy notes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbf8ef"/>
+      <stop offset="0.55" stop-color="#f0eadb"/>
+      <stop offset="1" stop-color="#dfe8df"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1">
+      <stop offset="0" stop-color="#12664f"/>
+      <stop offset="1" stop-color="#0d4f3d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#2c2515" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="90" cy="78" r="170" fill="#12664f" opacity="0.12"/>
+  <circle cx="1090" cy="550" r="220" fill="#b7791f" opacity="0.12"/>
+
+  <g filter="url(#shadow)">
+    <rect x="108" y="92" width="984" height="446" rx="18" fill="#fffaf0" stroke="#ded6c3" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(154 140)">
+    <rect x="0" y="0" width="370" height="300" rx="12" fill="#ffffff" stroke="#ded6c3" stroke-width="2"/>
+    <rect x="34" y="34" width="96" height="96" rx="10" fill="#f0dfb8" stroke="#b7791f" stroke-width="2"/>
+    <rect x="138" y="34" width="96" height="96" rx="10" fill="#eaf2ec" stroke="#12664f" stroke-width="2"/>
+    <rect x="242" y="34" width="96" height="96" rx="10" fill="#eef3f8" stroke="#315f86" stroke-width="2"/>
+    <rect x="34" y="138" width="96" height="96" rx="10" fill="#eef3f8" stroke="#315f86" stroke-width="2"/>
+    <rect x="138" y="138" width="96" height="96" rx="10" fill="#fffaf0" stroke="#ded6c3" stroke-width="2"/>
+    <rect x="242" y="138" width="96" height="96" rx="10" fill="#eaf2ec" stroke="#12664f" stroke-width="2"/>
+    <circle cx="82" cy="82" r="15" fill="#12664f"/>
+    <circle cx="186" cy="186" r="15" fill="#b7791f"/>
+    <circle cx="290" cy="82" r="15" fill="#315f86"/>
+    <path d="M82 82 C132 126 150 142 186 186 C224 160 246 128 290 82" fill="none" stroke="#1d2520" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <g transform="translate(582 142)">
+    <rect x="0" y="0" width="402" height="298" rx="12" fill="#ffffff" stroke="#ded6c3" stroke-width="2"/>
+    <rect x="36" y="34" width="74" height="104" rx="8" fill="#fffaf0" stroke="#12664f" stroke-width="3"/>
+    <rect x="98" y="52" width="74" height="104" rx="8" fill="#fffaf0" stroke="#315f86" stroke-width="3"/>
+    <rect x="160" y="70" width="74" height="104" rx="8" fill="#fffaf0" stroke="#b7791f" stroke-width="3"/>
+    <path d="M60 188 H338" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 224 H300" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 260 H242" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="308" cy="86" r="34" fill="url(#green)"/>
+    <path d="M294 86 l10 10 l20 -24" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="154" y="505" fill="#12664f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="3">SENIOR PLAYER REVIEW DESK</text>
+  <text x="154" y="558" fill="#1d2520" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="850">Game Strategy Notes Hub</text>
+  <text x="694" y="555" fill="#617065" font-family="Segoe UI, Arial, sans-serif" font-size="22">Decisions · Risk · Patterns · Review</text>
+</svg>
