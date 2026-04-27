@@ -1,55 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Game Strategy Notes Hub cover image</title>
-  <desc id="desc">A calm senior-player review desk with board and card strategy notes.</desc>
+  <title id="title">South Asian classroom teaching game strategy notes</title>
+  <desc id="desc">A South Asian classroom scene where a teacher explains board and card game decisions to students using a chalkboard and review notes.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#fbf8ef"/>
-      <stop offset="0.55" stop-color="#f0eadb"/>
-      <stop offset="1" stop-color="#dfe8df"/>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9f0dc"/>
+      <stop offset="0.56" stop-color="#efe0bd"/>
+      <stop offset="1" stop-color="#d9e3d7"/>
     </linearGradient>
-    <linearGradient id="green" x1="0" x2="1">
-      <stop offset="0" stop-color="#12664f"/>
-      <stop offset="1" stop-color="#0d4f3d"/>
+    <linearGradient id="board" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f513f"/>
+      <stop offset="1" stop-color="#12664f"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#2c2515" flood-opacity="0.14"/>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#2c2515" flood-opacity="0.16"/>
     </filter>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="90" cy="78" r="170" fill="#12664f" opacity="0.12"/>
-  <circle cx="1090" cy="550" r="220" fill="#b7791f" opacity="0.12"/>
 
-  <g filter="url(#shadow)">
-    <rect x="108" y="92" width="984" height="446" rx="18" fill="#fffaf0" stroke="#ded6c3" stroke-width="2"/>
+  <rect width="1200" height="630" fill="url(#wall)"/>
+  <rect x="0" y="448" width="1200" height="182" fill="#cfa66f"/>
+  <path d="M0 448 H1200" stroke="#9f7843" stroke-width="4" opacity="0.45"/>
+
+  <g opacity="0.42">
+    <rect x="70" y="70" width="128" height="164" rx="8" fill="#fdf7ea" stroke="#b7791f" stroke-width="3"/>
+    <path d="M134 70 V234 M70 152 H198" stroke="#d8bd85" stroke-width="3"/>
+    <rect x="1002" y="72" width="128" height="164" rx="8" fill="#fdf7ea" stroke="#b7791f" stroke-width="3"/>
+    <path d="M1066 72 V236 M1002 154 H1130" stroke="#d8bd85" stroke-width="3"/>
   </g>
 
-  <g transform="translate(154 140)">
-    <rect x="0" y="0" width="370" height="300" rx="12" fill="#ffffff" stroke="#ded6c3" stroke-width="2"/>
-    <rect x="34" y="34" width="96" height="96" rx="10" fill="#f0dfb8" stroke="#b7791f" stroke-width="2"/>
-    <rect x="138" y="34" width="96" height="96" rx="10" fill="#eaf2ec" stroke="#12664f" stroke-width="2"/>
-    <rect x="242" y="34" width="96" height="96" rx="10" fill="#eef3f8" stroke="#315f86" stroke-width="2"/>
-    <rect x="34" y="138" width="96" height="96" rx="10" fill="#eef3f8" stroke="#315f86" stroke-width="2"/>
-    <rect x="138" y="138" width="96" height="96" rx="10" fill="#fffaf0" stroke="#ded6c3" stroke-width="2"/>
-    <rect x="242" y="138" width="96" height="96" rx="10" fill="#eaf2ec" stroke="#12664f" stroke-width="2"/>
-    <circle cx="82" cy="82" r="15" fill="#12664f"/>
-    <circle cx="186" cy="186" r="15" fill="#b7791f"/>
-    <circle cx="290" cy="82" r="15" fill="#315f86"/>
-    <path d="M82 82 C132 126 150 142 186 186 C224 160 246 128 290 82" fill="none" stroke="#1d2520" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  <g filter="url(#soft-shadow)">
+    <rect x="246" y="62" width="708" height="306" rx="14" fill="url(#board)" stroke="#e8d6ac" stroke-width="8"/>
+    <rect x="276" y="92" width="648" height="246" rx="8" fill="none" stroke="#d9eadf" stroke-width="2" opacity="0.38"/>
   </g>
 
-  <g transform="translate(582 142)">
-    <rect x="0" y="0" width="402" height="298" rx="12" fill="#ffffff" stroke="#ded6c3" stroke-width="2"/>
-    <rect x="36" y="34" width="74" height="104" rx="8" fill="#fffaf0" stroke="#12664f" stroke-width="3"/>
-    <rect x="98" y="52" width="74" height="104" rx="8" fill="#fffaf0" stroke="#315f86" stroke-width="3"/>
-    <rect x="160" y="70" width="74" height="104" rx="8" fill="#fffaf0" stroke="#b7791f" stroke-width="3"/>
-    <path d="M60 188 H338" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
-    <path d="M60 224 H300" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
-    <path d="M60 260 H242" stroke="#ded6c3" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="308" cy="86" r="34" fill="url(#green)"/>
-    <path d="M294 86 l10 10 l20 -24" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="304" y="142" fill="#f7f3df" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="1.5">DECISION REVIEW CLASS</text>
+  <text x="304" y="190" fill="#f7f3df" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">1. What was known before the move?</text>
+  <text x="304" y="229" fill="#f7f3df" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">2. Was the risk useful or emotional?</text>
+  <text x="304" y="268" fill="#f7f3df" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">3. Which pattern repeated?</text>
+  <text x="304" y="307" fill="#f7f3df" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">4. What should be watched next game?</text>
+
+  <g transform="translate(760 148)">
+    <rect x="0" y="0" width="118" height="118" rx="10" fill="#fff6df" stroke="#f7f3df" stroke-width="4"/>
+    <rect x="12" y="12" width="42" height="42" rx="6" fill="#f0dfb8"/>
+    <rect x="64" y="12" width="42" height="42" rx="6" fill="#d8efe5"/>
+    <rect x="12" y="64" width="42" height="42" rx="6" fill="#e6eef6"/>
+    <rect x="64" y="64" width="42" height="42" rx="6" fill="#f7e3c2"/>
+    <circle cx="33" cy="33" r="7" fill="#12664f"/>
+    <circle cx="85" cy="85" r="7" fill="#b7791f"/>
+    <path d="M33 33 C54 48 66 68 85 85" fill="none" stroke="#1d2520" stroke-width="4" stroke-linecap="round"/>
   </g>
 
-  <text x="154" y="505" fill="#12664f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="3">SENIOR PLAYER REVIEW DESK</text>
-  <text x="154" y="558" fill="#1d2520" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="850">Game Strategy Notes Hub</text>
-  <text x="694" y="555" fill="#617065" font-family="Segoe UI, Arial, sans-serif" font-size="22">Decisions · Risk · Patterns · Review</text>
+  <g transform="translate(184 304)">
+    <ellipse cx="83" cy="219" rx="72" ry="18" fill="#5c3d23" opacity="0.18"/>
+    <path d="M54 78 C42 122 45 168 54 220 H113 C124 166 122 120 110 78 Z" fill="#1c6b54"/>
+    <path d="M58 104 C24 124 15 159 18 201" fill="none" stroke="#8b5a35" stroke-width="16" stroke-linecap="round"/>
+    <path d="M108 103 C146 121 153 156 148 197" fill="none" stroke="#8b5a35" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="82" cy="45" r="36" fill="#9a643d"/>
+    <path d="M50 39 C56 8 112 8 118 39 C104 28 70 28 50 39Z" fill="#1f1a17"/>
+    <path d="M64 54 C76 65 91 65 101 54" fill="none" stroke="#3b2417" stroke-width="4" stroke-linecap="round"/>
+    <rect x="136" y="168" width="8" height="92" rx="4" fill="#3d3326"/>
+    <path d="M140 168 L218 124" stroke="#3d3326" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(402 410)" filter="url(#soft-shadow)">
+    <path d="M0 88 C28 24 88 0 178 0 H486 C548 0 596 28 622 88 Z" fill="#8f6336"/>
+    <rect x="38" y="74" width="548" height="46" rx="8" fill="#6f4928"/>
+    <rect x="92" y="24" width="156" height="92" rx="8" fill="#fffaf0" stroke="#ded6c3" stroke-width="2"/>
+    <path d="M114 46 H218 M114 68 H204 M114 90 H230" stroke="#617065" stroke-width="4" stroke-linecap="round"/>
+    <rect x="294" y="20" width="66" height="92" rx="8" fill="#fffaf0" stroke="#12664f" stroke-width="3"/>
+    <rect x="344" y="34" width="66" height="92" rx="8" fill="#fffaf0" stroke="#315f86" stroke-width="3"/>
+    <rect x="394" y="48" width="66" height="92" rx="8" fill="#fffaf0" stroke="#b7791f" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(596 330)">
+    <ellipse cx="0" cy="186" rx="50" ry="14" fill="#5c3d23" opacity="0.14"/>
+    <path d="M-26 82 C-42 122 -40 154 -28 188 H28 C40 154 42 122 26 82 Z" fill="#315f86"/>
+    <circle cx="0" cy="44" r="30" fill="#8b5a35"/>
+    <path d="M-28 38 C-16 13 20 13 30 40 C16 31 -8 31 -28 38Z" fill="#191614"/>
+  </g>
+
+  <g transform="translate(724 338)">
+    <ellipse cx="0" cy="178" rx="50" ry="14" fill="#5c3d23" opacity="0.14"/>
+    <path d="M-27 78 C-42 116 -40 148 -26 180 H28 C40 148 42 116 26 78 Z" fill="#b7791f"/>
+    <circle cx="0" cy="40" r="30" fill="#9a643d"/>
+    <path d="M-28 36 C-13 10 22 12 31 41 C14 30 -8 31 -28 36Z" fill="#1f1a17"/>
+  </g>
+
+  <g transform="translate(852 330)">
+    <ellipse cx="0" cy="186" rx="50" ry="14" fill="#5c3d23" opacity="0.14"/>
+    <path d="M-28 82 C-42 120 -40 154 -28 188 H30 C41 154 42 120 26 82 Z" fill="#12664f"/>
+    <circle cx="0" cy="44" r="30" fill="#8b5a35"/>
+    <path d="M-31 43 C-20 14 18 10 32 36 C16 30 -8 30 -31 43Z" fill="#211914"/>
+  </g>
+
+  <rect x="64" y="530" width="1072" height="70" rx="12" fill="#fffaf0" stroke="#ded6c3" stroke-width="2" opacity="0.96"/>
+  <text x="96" y="573" fill="#12664f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="850" letter-spacing="2">SOUTH ASIAN CLASSROOM · SENIOR PLAYER REVIEW NOTES</text>
+  <text x="728" y="573" fill="#617065" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Ludo · Teen Patti · Callbreak · Decision Making</text>
 </svg>
