@@ -1,117 +1,1222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Strategy Notes | Ludo, Teen Patti, Callbreak</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Strategy Notes Hub | Ludo, Teen Patti, Callbreak Guides</title>
+  <meta name="description" content="A calm learning hub for Ludo, Teen Patti, Callbreak, and Indian skill game notes covering fundamentals, decisions, risk balance, and common mistakes.">
+  <meta name="keywords" content="game strategy notes, Ludo strategy India, Teen Patti guide India, Callbreak strategy guide, Indian card games, skill gaming guides, decision making games">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f7f4eb">
+  <link rel="canonical" href="https://market-lab-cmd.github.io/">
 
-<meta name="description" content="Personal gameplay notes and strategy insights for Ludo, Teen Patti, Callbreak, and Indian card games. Learn decision-making, avoid common mistakes, and improve your gameplay.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Game Strategy Notes Hub">
+  <meta property="og:description" content="Explore practical learning notes for Ludo, Teen Patti, Callbreak, and Indian skill games.">
+  <meta property="og:url" content="https://market-lab-cmd.github.io/">
+  <meta property="og:image" content="https://market-lab-cmd.github.io/ludo-strategy-india/assets/images/overview.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Game Strategy Notes Hub">
+  <meta name="twitter:description" content="A structured directory of gameplay concepts, decision-making notes, and strategy learning resources.">
+  <meta name="twitter:image" content="https://market-lab-cmd.github.io/ludo-strategy-india/assets/images/overview.webp">
 
-<style>
-body{font-family:Arial, sans-serif;margin:0;background:#f5f7fb;color:#111;}
-.container{max-width:1100px;margin:auto;padding:20px;}
-h1{font-size:36px;}
-.card{background:#fff;border-radius:12px;padding:20px;margin:15px 0;box-shadow:0 5px 15px rgba(0,0,0,.05);}
-a{color:#2563eb;text-decoration:none;font-weight:bold;}
-.toggle{position:fixed;top:15px;right:15px;font-size:20px;cursor:pointer;}
-.dark{background:#0f172a;color:#e5e7eb;}
-.dark .card{background:#1e293b;}
-</style>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f4eb;
+      --surface: #fffaf0;
+      --surface-strong: #ffffff;
+      --ink: #1d2520;
+      --muted: #617065;
+      --line: #ded6c3;
+      --primary: #12664f;
+      --primary-strong: #0d4f3d;
+      --accent: #b7791f;
+      --accent-soft: #f0dfb8;
+      --blue: #315f86;
+      --shadow: 0 18px 45px rgba(44, 37, 21, 0.11);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(18, 102, 79, 0.12), transparent 30rem),
+        linear-gradient(180deg, #fbf8ef 0%, var(--bg) 42%, #eef3ef 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 20;
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(222, 214, 195, 0.78);
+      background: rgba(247, 244, 235, 0.92);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      display: grid;
+      gap: 2px;
+      min-width: 190px;
+    }
+
+    .brand span:first-child {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand span:last-child {
+      font-size: 18px;
+      font-weight: 850;
+      line-height: 1.1;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      color: #33453a;
+      font-size: 14px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      background: rgba(18, 102, 79, 0.1);
+      color: var(--primary-strong);
+      outline: none;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .section {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .hero {
+      width: min(1280px, calc(100% - 32px));
+      min-height: calc(100dvh - 72px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr);
+      align-items: center;
+      gap: 48px;
+      padding: 48px 0 36px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-top: 18px;
+      font-size: clamp(2.7rem, 7vw, 5.85rem);
+      text-wrap: balance;
+    }
+
+    #hero-title {
+      margin-top: 10px;
+      font-size: 48px;
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-wrap: balance;
+    }
+
+    h3 {
+      font-size: 1.22rem;
+    }
+
+    .lede {
+      max-width: 720px;
+      margin: 18px 0 0;
+      color: #4a5b50;
+      font-size: clamp(1.05rem, 2vw, 1.24rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      font-weight: 850;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .button.primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(18, 102, 79, 0.24);
+    }
+
+    .button.primary:hover,
+    .button.primary:focus-visible {
+      background: var(--primary-strong);
+    }
+
+    .button.secondary {
+      border-color: rgba(18, 102, 79, 0.24);
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--primary-strong);
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 680px;
+      margin-top: 36px;
+    }
+
+    .proof-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 250, 240, 0.8);
+      padding: 14px;
+    }
+
+    .proof-item strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.35rem;
+      line-height: 1.1;
+    }
+
+    .proof-item span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+
+    .visual-board {
+      position: relative;
+      min-height: 570px;
+    }
+
+    .visual-card {
+      position: absolute;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .visual-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .visual-card.main {
+      inset: 32px 18px 82px 78px;
+    }
+
+    .visual-card.side {
+      width: 42%;
+      height: 38%;
+      right: 0;
+      top: 0;
+    }
+
+    .visual-card.lower {
+      width: 48%;
+      height: 36%;
+      left: 0;
+      bottom: 0;
+    }
+
+    .note-panel {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+      width: min(360px, 72%);
+      border: 1px solid rgba(222, 214, 195, 0.86);
+      border-radius: var(--radius);
+      background: rgba(255, 250, 240, 0.92);
+      padding: 18px;
+      box-shadow: 0 14px 35px rgba(44, 37, 21, 0.12);
+    }
+
+    .note-panel strong {
+      display: block;
+      font-size: 0.95rem;
+    }
+
+    .note-panel span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(250px, 0.45fr);
+      align-items: end;
+      gap: 32px;
+      margin-bottom: 28px;
+    }
+
+    .section-head p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+
+    .section-kicker {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .guide-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      box-shadow: 0 10px 24px rgba(44, 37, 21, 0.06);
+    }
+
+    .guide-card.featured {
+      grid-column: span 2;
+    }
+
+    .guide-card__image {
+      aspect-ratio: 16 / 9;
+      background: #ede4cf;
+    }
+
+    .guide-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .guide-card__body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tag {
+      border: 1px solid rgba(18, 102, 79, 0.18);
+      border-radius: var(--radius);
+      background: rgba(18, 102, 79, 0.08);
+      color: var(--primary-strong);
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .guide-card p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .guide-link {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin-top: auto;
+      padding-top: 18px;
+      color: var(--primary);
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .guide-link:hover,
+    .guide-link:focus-visible {
+      color: var(--primary-strong);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      outline: none;
+    }
+
+    .topic-band {
+      border-block: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.58);
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .topic-card {
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.68);
+      padding: 20px;
+      text-decoration: none;
+      transition: border-color 0.18s ease, transform 0.18s ease, background 0.18s ease;
+    }
+
+    .topic-card:hover,
+    .topic-card:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(18, 102, 79, 0.38);
+      background: #fff;
+      outline: none;
+    }
+
+    .topic-card span {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .topic-card strong {
+      margin-top: 8px;
+      color: var(--ink);
+      font-size: 1.12rem;
+      line-height: 1.25;
+    }
+
+    .topic-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .learning-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
+      gap: 26px;
+      align-items: start;
+    }
+
+    .method-card {
+      position: sticky;
+      top: 104px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--primary);
+      color: #fff;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .method-card h2 {
+      font-size: 2rem;
+    }
+
+    .method-card p {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .method-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .method-list li {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      padding: 20px;
+    }
+
+    .method-list strong {
+      display: block;
+      font-size: 1.08rem;
+    }
+
+    .method-list p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    summary:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 4px;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #18231e;
+      color: #eaf2ec;
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .footer-inner p {
+      max-width: 680px;
+      margin: 0;
+      color: rgba(234, 242, 236, 0.78);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      outline: none;
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .section-head,
+      .learning-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        gap: 28px;
+        padding-top: 42px;
+      }
+
+      .visual-board {
+        min-height: 450px;
+      }
+
+      .guide-grid,
+      .topic-grid,
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .guide-card.featured {
+        grid-column: span 1;
+      }
+
+      .method-card {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 54px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nav-links a {
+        padding-inline: 10px;
+      }
+
+      .hero-proof,
+      .guide-grid,
+      .topic-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .visual-board {
+        min-height: 390px;
+      }
+
+      .visual-card.main {
+        inset: 52px 0 74px 42px;
+      }
+
+      .visual-card.side {
+        width: 54%;
+        height: 34%;
+      }
+
+      .visual-card.lower {
+        width: 58%;
+        height: 34%;
+      }
+
+      .note-panel {
+        right: 12px;
+        bottom: 12px;
+        width: min(330px, 82%);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Game Strategy Notes Hub",
+    "description": "A calm learning hub for Ludo, Teen Patti, Callbreak, and Indian skill game strategy notes.",
+    "url": "https://market-lab-cmd.github.io/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Market Lab CMD Game Notes",
+      "url": "https://market-lab-cmd.github.io/"
+    },
+    "about": [
+      "Ludo strategy",
+      "Teen Patti guide",
+      "Callbreak strategy",
+      "Indian card games",
+      "Skill gaming decision making"
+    ],
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Ludo Strategy India",
+        "url": "https://market-lab-cmd.github.io/ludo-strategy-india/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Teen Patti Guide India",
+        "url": "https://market-lab-cmd.github.io/teenpatti-guide-india/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Callbreak Strategy Guide",
+        "url": "https://market-lab-cmd.github.io/Callbreak/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Indian Card Games Hub",
+        "url": "https://market-lab-cmd.github.io/indian-card-games-hub/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "India Skill Gaming Hub",
+        "url": "https://market-lab-cmd.github.io/india-skill-gaming-hub/"
+      }
+    ],
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Game strategy guide directory",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ludo Strategy India",
+          "url": "https://market-lab-cmd.github.io/ludo-strategy-india/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Teen Patti Guide India",
+          "url": "https://market-lab-cmd.github.io/teenpatti-guide-india/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Callbreak Strategy Guide",
+          "url": "https://market-lab-cmd.github.io/Callbreak/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Indian Card Games Hub",
+          "url": "https://market-lab-cmd.github.io/indian-card-games-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "India Skill Gaming Hub",
+          "url": "https://market-lab-cmd.github.io/india-skill-gaming-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Skill Game Strategy India",
+          "url": "https://market-lab-cmd.github.io/skill-game-strategy-india/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Game Insight India",
+          "url": "https://market-lab-cmd.github.io/gameinsight-india/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Desi Game Strategy",
+          "url": "https://market-lab-cmd.github.io/desi-game-strategy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Ludo Teen Patti Hub",
+          "url": "https://market-lab-cmd.github.io/ludo-teenpatti-hub/"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<div class="toggle" onclick="toggleMode()">🌙</div>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="https://market-lab-cmd.github.io/" aria-label="Game Strategy Notes Hub home">
+        <span>Study Directory</span>
+        <span>Game Strategy Notes</span>
+      </a>
+      <div class="nav-links">
+        <a href="#guides">Guides</a>
+        <a href="#topics">Topics</a>
+        <a href="#method">Method</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+  </header>
 
-<div class="container">
-<h1>My Gameplay Notes & Strategy Experiments</h1>
+  <main id="main" class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Educational gameplay notes</p>
+        <h1 id="hero-title">Game strategy notes for clearer decisions.</h1>
+        <p class="lede">
+          A structured learning hub for Ludo, Teen Patti, Callbreak, and Indian skill game concepts.
+          The focus is practical study: fundamentals, pattern recognition, risk balance, table awareness,
+          and the common mistakes players repeat.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#guides">Browse strategy guides</a>
+          <a class="button secondary" href="#topics">Explore learning topics</a>
+        </div>
+        <div class="hero-proof" aria-label="Site summary">
+          <div class="proof-item">
+            <strong>9</strong>
+            <span>connected guide collections</span>
+          </div>
+          <div class="proof-item">
+            <strong>90+</strong>
+            <span>topic pages across the network</span>
+          </div>
+          <div class="proof-item">
+            <strong>0</strong>
+            <span>promises of perfect play</span>
+          </div>
+        </div>
+      </div>
 
-<p>
-I’ve spent a lot of time playing Ludo, Teen Patti, Callbreak, and other Indian card and board games. 
-Over time, I realized that most players repeat the same mistakes — including me.
-</p>
+      <div class="visual-board" aria-label="Preview of connected game strategy guides">
+        <figure class="visual-card side">
+          <img src="https://market-lab-cmd.github.io/teenpatti-guide-india/assets/images/hand-ranking.png" alt="Teen Patti hand ranking guide preview" width="900" height="506">
+        </figure>
+        <figure class="visual-card main">
+          <img src="https://market-lab-cmd.github.io/ludo-strategy-india/assets/images/overview.webp" alt="Ludo strategy learning guide preview with board notes" width="1200" height="675">
+        </figure>
+        <figure class="visual-card lower">
+          <img src="https://market-lab-cmd.github.io/Callbreak/assets/images/overview.png" alt="Callbreak strategy guide preview" width="900" height="506" loading="lazy" decoding="async">
+        </figure>
+        <div class="note-panel">
+          <strong>Built like a study desk, not a sales page.</strong>
+          <span>Use the directory to move from rules and fundamentals into decision quality, scenarios, and review habits.</span>
+        </div>
+      </div>
+    </section>
 
-<p>
-This page is a collection of my personal notes, observations, and patterns I’ve learned while playing. 
-Some ideas worked, some didn’t — but all of them helped me understand the games better.
-</p>
+    <section class="section" id="guides" aria-labelledby="guides-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Guide collections</p>
+          <h2 id="guides-title">Start with the game you are studying now.</h2>
+        </div>
+        <p>
+          Each collection is written as a learning resource. The links below point to dedicated GitHub Pages sites
+          with topic pages, article paths, and supporting visuals.
+        </p>
+      </div>
 
-<h2>Game Strategy Repositories</h2>
+      <div class="guide-grid">
+        <article class="guide-card featured">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/ludo-strategy-india/" aria-label="Open Ludo Strategy India">
+            <img src="https://market-lab-cmd.github.io/ludo-strategy-india/assets/images/overview.webp" alt="Ludo strategy guide cover image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Board game</span>
+              <span class="tag">Decision timing</span>
+              <span class="tag">Risk balance</span>
+            </div>
+            <h3>Ludo Strategy India</h3>
+            <p>Study token development, safe square thinking, capture timing, pacing, and how small board decisions change the whole game.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/ludo-strategy-india/">Explore Ludo strategy</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Ludo Strategy Notes</h3>
-<p>Thoughts about token movement, safe vs risky plays, and how small decisions change the whole game.</p>
-<a href="https://market-lab-cmd.github.io/ludo-strategy-india/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/teenpatti-guide-india/" aria-label="Open Teen Patti Guide India">
+            <img src="https://market-lab-cmd.github.io/teenpatti-guide-india/assets/images/teen-patti-hand-ranking.png" alt="Teen Patti hand ranking and guide cover image" width="900" height="506" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Card game</span>
+              <span class="tag">Beginner guide</span>
+            </div>
+            <h3>Teen Patti Guide India</h3>
+            <p>Learn rules, hand rankings, gameplay flow, cautious play, and beginner mistakes through a simple study path.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/teenpatti-guide-india/">Read Teen Patti guide</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Teen Patti Gameplay Notes</h3>
-<p>Observations about reading players, timing decisions, and when to stay cautious instead of aggressive.</p>
-<a href="https://market-lab-cmd.github.io/teenpatti-guide-india/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/Callbreak/" aria-label="Open Callbreak Strategy Guide">
+            <img src="https://market-lab-cmd.github.io/Callbreak/assets/images/fundamentals.jpg" alt="Callbreak fundamentals guide image" width="900" height="506" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Trick-taking</span>
+              <span class="tag">Calling</span>
+            </div>
+            <h3>Callbreak Strategy Guide</h3>
+            <p>Review rules, calls, trick planning, table awareness, and advanced concepts for steadier card decisions.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/Callbreak/">Study Callbreak</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Callbreak Learning Notes</h3>
-<p>Simple breakdowns of tricks, mistakes, and how understanding patterns improves consistency.</p>
-<a href="https://market-lab-cmd.github.io/Callbreak/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/indian-card-games-hub/" aria-label="Open Indian Card Games Hub">
+            <img src="https://market-lab-cmd.github.io/indian-card-games-hub/assets/images/overview.webp" alt="Indian card games study hub overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Card habits</span>
+              <span class="tag">Patterns</span>
+            </div>
+            <h3>Indian Card Games Hub</h3>
+            <p>Compare shared patterns across card games, including reading rhythm, managing uncertainty, and avoiding repeated errors.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/indian-card-games-hub/">Open card game hub</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Indian Card Games Hub</h3>
-<p>General notes about shared patterns across card games — useful if you play more than one game.</p>
-<a href="https://market-lab-cmd.github.io/indian-card-games-hub/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/" aria-label="Open India Skill Gaming Hub">
+            <img src="https://market-lab-cmd.github.io/india-skill-gaming-hub/assets/images/overview.webp" alt="India skill gaming hub overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Study path</span>
+              <span class="tag">Awareness</span>
+            </div>
+            <h3>India Skill Gaming Hub</h3>
+            <p>A broader study path for fundamentals, decision quality, awareness, patterns, risk, scenarios, and strategic thinking.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/">Follow study path</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Strategy & Thinking</h3>
-<p>More general ideas about decision-making, risk balance, and recognizing patterns in games.</p>
-<a href="https://market-lab-cmd.github.io/skill-game-strategy-india/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/skill-game-strategy-india/" aria-label="Open Skill Game Strategy India">
+            <img src="https://market-lab-cmd.github.io/skill-game-strategy-india/assets/images/overview.webp" alt="Skill game strategy overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Strategy</span>
+              <span class="tag">Review</span>
+            </div>
+            <h3>Skill Game Strategy India</h3>
+            <p>General strategy notes for players who want to improve through cleaner decisions and post-game review.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/skill-game-strategy-india/">Explore strategy notes</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Combined Game Notes</h3>
-<p>A mix of Ludo and Teen Patti insights for comparing how different games require different thinking.</p>
-<a href="https://market-lab-cmd.github.io/ludo-teenpatti-hub/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/ludo-teenpatti-hub/" aria-label="Open Ludo Teen Patti Hub">
+            <img src="https://market-lab-cmd.github.io/ludo-teenpatti-hub/assets/images/overview.webp" alt="Ludo and Teen Patti combined notes overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Comparison</span>
+              <span class="tag">Mixed notes</span>
+            </div>
+            <h3>Ludo Teen Patti Hub</h3>
+            <p>Compare how different games ask for different thinking, from board positioning to card judgment.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/ludo-teenpatti-hub/">Compare game notes</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Gameplay Insights</h3>
-<p>Short observations about mistakes, habits, and things players usually ignore.</p>
-<a href="https://market-lab-cmd.github.io/gameinsight-india/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/gameinsight-india/" aria-label="Open Game Insight India">
+            <img src="https://market-lab-cmd.github.io/gameinsight-india/assets/images/overview.jpg" alt="Gameplay insight study hub overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Insights</span>
+              <span class="tag">Habits</span>
+            </div>
+            <h3>Game Insight India</h3>
+            <p>Shorter observations about mistakes, habits, repeated patterns, and details players often overlook.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/gameinsight-india/">Read gameplay insights</a>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Desi Game Notes</h3>
-<p>Casual notes about traditional games and general playing styles.</p>
-<a href="https://market-lab-cmd.github.io/desi-game-strategy/">Explore →</a>
-</div>
+        <article class="guide-card">
+          <a class="guide-card__image" href="https://market-lab-cmd.github.io/desi-game-strategy/" aria-label="Open Desi Game Strategy">
+            <img src="https://market-lab-cmd.github.io/desi-game-strategy/assets/images/overview.webp" alt="Desi game strategy notes overview image" width="1200" height="675" loading="lazy" decoding="async">
+          </a>
+          <div class="guide-card__body">
+            <div class="tag-row">
+              <span class="tag">Traditional games</span>
+              <span class="tag">Playing styles</span>
+            </div>
+            <h3>Desi Game Strategy</h3>
+            <p>Casual study notes about familiar game situations, player behavior, and practical thinking across traditional games.</p>
+            <a class="guide-link" href="https://market-lab-cmd.github.io/desi-game-strategy/">Visit desi game notes</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="card">
-<h3>General Gaming Hub</h3>
-<p>A broader collection of notes across different games and ideas.</p>
-<a href="https://market-lab-cmd.github.io/india-skill-gaming-hub/">Explore →</a>
-</div>
+    <section class="topic-band" id="topics" aria-labelledby="topics-title">
+      <div class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Learning topics</p>
+            <h2 id="topics-title">Study by concept when the game is less important than the decision.</h2>
+          </div>
+          <p>
+            Many mistakes look different on the surface but share the same cause:
+            rushed judgment, weak awareness, poor risk reading, or no review habit after the game ends.
+          </p>
+        </div>
 
-<p>
-These are not “perfect strategies” — just practical ideas from real gameplay.
-If you play these games regularly, you’ll probably recognize some of these situations.
-</p>
+        <div class="topic-grid">
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/fundamentals.html">
+            <span>01</span>
+            <strong>Fundamentals</strong>
+            <p>Build the base habits that make later strategy easier to understand.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/decision-making.html">
+            <span>02</span>
+            <strong>Decision Making</strong>
+            <p>Choose under pressure without turning every move into a guess.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/game-awareness.html">
+            <span>03</span>
+            <strong>Game Awareness</strong>
+            <p>Read more than your own plan and notice what the table is telling you.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/pattern-recognition.html">
+            <span>04</span>
+            <strong>Pattern Recognition</strong>
+            <p>Spot repeated situations before they become repeated mistakes.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/risk-balance.html">
+            <span>05</span>
+            <strong>Risk Balance</strong>
+            <p>Learn when a risk is useful, forced, avoidable, or simply emotional.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/common-mistakes.html">
+            <span>06</span>
+            <strong>Common Mistakes</strong>
+            <p>Turn familiar errors into checklists you can actually correct.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/scenarios.html">
+            <span>07</span>
+            <strong>Scenarios</strong>
+            <p>Use realistic situations to connect theory with practical choices.</p>
+          </a>
+          <a class="topic-card" href="https://market-lab-cmd.github.io/india-skill-gaming-hub/strategic-thinking.html">
+            <span>08</span>
+            <strong>Strategic Thinking</strong>
+            <p>Plan beyond the current move while staying honest about uncertainty.</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="section" id="method" aria-labelledby="method-title">
+      <div class="learning-layout">
+        <aside class="method-card">
+          <p class="section-kicker">How to use this hub</p>
+          <h2 id="method-title">A calmer way to learn games.</h2>
+          <p>
+            Pick a game, read the fundamentals, then jump into the concept that matches your latest repeated mistake.
+            Good study is less about secret tricks and more about naming the decision clearly.
+          </p>
+        </aside>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5PPQX5BDS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <ol class="method-list">
+          <li>
+            <strong>1. Start with one game collection.</strong>
+            <p>Choose Ludo, Teen Patti, Callbreak, or a general hub based on what you are actively playing.</p>
+          </li>
+          <li>
+            <strong>2. Read the fundamentals before advanced pages.</strong>
+            <p>Advanced ideas are useful only when the base habits are already stable enough to support them.</p>
+          </li>
+          <li>
+            <strong>3. Compare related topics across games.</strong>
+            <p>Risk, timing, awareness, and review habits show up differently, but the learning pattern is often shared.</p>
+          </li>
+          <li>
+            <strong>4. Review one mistake after each session.</strong>
+            <p>Do not try to fix everything. Naming one repeated error is often enough to improve the next game.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-  gtag('config', 'G-T5PPQX5BDS');
-  
-  function toggleMode(){
-	 document.body.classList.toggle("dark");
-	}
-</script>
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">FAQ</p>
+          <h2 id="faq-title">Common questions about the notes.</h2>
+        </div>
+        <p>These answers describe the intent of the site and help search engines understand the resource without overstating what the guides can do.</p>
+      </div>
 
+      <div class="faq-grid">
+        <details>
+          <summary>Is this a promotional gaming site?</summary>
+          <p>No. This is an educational directory for gameplay concepts, strategy notes, and learning materials. It is written in a neutral, knowledge-based style.</p>
+        </details>
+        <details>
+          <summary>Do these guides promise guaranteed wins?</summary>
+          <p>No. Games include uncertainty, opponents, and changing situations. The guides focus on improving decision quality and reducing repeated mistakes.</p>
+        </details>
+        <details>
+          <summary>Which guide should a beginner read first?</summary>
+          <p>Start with the game you already know or want to learn. For broader study, begin with fundamentals, then decision-making, awareness, and risk balance.</p>
+        </details>
+        <details>
+          <summary>Why are several games grouped together?</summary>
+          <p>Ludo, Teen Patti, Callbreak, and related games have different rules, but many learning habits overlap: reading patterns, managing risk, and reviewing errors.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>
+        Game Strategy Notes is a GitHub Pages learning directory for gameplay concepts, Indian card game guides,
+        board game strategy notes, and practical decision-making study.
+      </p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="https://market-lab-cmd.github.io/ludo-strategy-india/">Ludo</a>
+        <a href="https://market-lab-cmd.github.io/teenpatti-guide-india/">Teen Patti</a>
+        <a href="https://market-lab-cmd.github.io/Callbreak/">Callbreak</a>
+        <a href="#main">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5PPQX5BDS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-T5PPQX5BDS");
+  </script>
 </body>
 </html>
